@@ -269,9 +269,15 @@ app.get('/api/v1/products/all-stats/:month', async (req, res) => {
 
     const [statisticsResponse, barChartResponse, pieChartResponse] =
       await Promise.all([
-        axios.get(`http://localhost:5000/api/v1/products/statistics/${month}`),
-        axios.get(`http://localhost:5000/api/v1/products/bar-chart/${month}`),
-        axios.get(`http://localhost:5000/api/v1/products/pie-chart/${month}`),
+        axios.get(
+          `https://roxiler-coding-challenge.onrender.com/api/v1/products/statistics/${month}`
+        ),
+        axios.get(
+          `https://roxiler-coding-challenge.onrender.com/api/v1/products/bar-chart/${month}`
+        ),
+        axios.get(
+          `https://roxiler-coding-challenge.onrender.com/api/v1/products/pie-chart/${month}`
+        ),
       ]);
 
     return res.status(200).json({
