@@ -73,6 +73,8 @@
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `month`      | `string` | **Required**. month for getting stats details. |
+
+
 ## Run Locally
 
 Clone the project
@@ -98,6 +100,10 @@ Start the server
 ```bash
   nodemon server
 ```
+## live project 
+https://roxiler-coding-challenge.onrender.com
+
+copy and paste above link in your browser (this will take 10-20 seconds for initial load)
 
 
 ## Environment Variables
